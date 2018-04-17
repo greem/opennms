@@ -46,7 +46,7 @@ public class NxosAdapterFactory extends AbstractCollectionAdapterFactory impleme
 
     @Override
     public Adapter createAdapter(Protocol protocol, Map<String, String> properties) {
-        final NxosGpbAdapter adapter = new NxosGpbAdapter();
+        NxosGpbAdapter adapter = new NxosGpbAdapter();
         adapter.setProtocol(protocol);
         adapter.setCollectionAgentFactory(getCollectionAgentFactory());
         adapter.setInterfaceToNodeCache(getInterfaceToNodeCache());

@@ -46,6 +46,7 @@ import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
@@ -136,6 +137,11 @@ public class TelemetryMessageConsumer implements MessageConsumer<TelemetryMessag
         }
 
         return adapter;
+    }
+
+    @PreDestroy
+    public void destroy() {
+        adapters.forEach((adapter) -> adapter.destroy());
     }
 
     @Override
