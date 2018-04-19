@@ -38,4 +38,12 @@
       </exclusions>
     </dependency>
   </dependencies>
+  <repositories>
+     <repository>
+       <id>sonatype-snapshots</id>
+       <snapshots><enabled>true</enabled></snapshots>
+       <releases><enabled>false</enabled></releases>
+       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+     </repository>
+  </repositories>
 </project>
