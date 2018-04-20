@@ -57,7 +57,6 @@
       <include-collection dataCollectionGroup="MIB2-Interfaces"/>
       <include-collection dataCollectionGroup="MIB2-Powerethernet"/>
       <include-collection dataCollectionGroup="MIB2-Protocols"/>
-      <include-collection dataCollectionGroup="MIB2-UPS"/>
       <include-collection dataCollectionGroup="Microsoft"/>
       <include-collection dataCollectionGroup="Mikrotik"/>
       <include-collection dataCollectionGroup="Net-SNMP"/>
@@ -72,6 +71,7 @@
       <include-collection dataCollectionGroup="PostgreSQL-JDBC"/>
       <include-collection dataCollectionGroup="Powerware"/>
       <include-collection dataCollectionGroup="REF_IETF"/>
+      <include-collection dataCollectionGroup="REF_MIB2-UPS"/>
       <include-collection dataCollectionGroup="REF_Printers"/>
       <include-collection dataCollectionGroup="REF_Routers"/>
       <include-collection dataCollectionGroup="Riverbed"/>
