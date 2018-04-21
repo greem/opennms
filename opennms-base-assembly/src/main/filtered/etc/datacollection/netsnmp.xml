@@ -127,6 +127,9 @@
    <systemDef name="Net-SNMP (UCD)">
       <sysoidMask>.1.3.6.1.4.1.2021.250.</sysoidMask>
       <collect>
+         <includeGroup>mib2-host-resources-system</includeGroup>
+         <includeGroup>mib2-host-resources-memory</includeGroup>
+         <includeGroup>mib2-host-resources-storage</includeGroup>
          <includeGroup>net-snmp-disk</includeGroup>
          <includeGroup>net-snmp-disk-more</includeGroup>
          <includeGroup>net-snmp-disk-highlow</includeGroup>
@@ -146,6 +149,9 @@
    <systemDef name="Net-SNMP">
       <sysoidMask>.1.3.6.1.4.1.8072.3.</sysoidMask>
       <collect>
+         <includeGroup>mib2-host-resources-system</includeGroup>
+         <includeGroup>mib2-host-resources-memory</includeGroup>
+         <includeGroup>mib2-host-resources-storage</includeGroup>
          <includeGroup>net-snmp-disk</includeGroup>
          <includeGroup>net-snmp-disk-more</includeGroup>
          <includeGroup>net-snmp-disk-highlow</includeGroup>
@@ -165,6 +171,8 @@
    <systemDef name="Net-SNMP 5.5 with sysObjectID bug on i386">
       <sysoid>.1.3</sysoid>
       <collect>
+         <includeGroup>mib2-host-resources-system</includeGroup>
+         <includeGroup>mib2-host-resources-memory</includeGroup>
          <includeGroup>net-snmp-disk</includeGroup>
          <includeGroup>net-snmp-disk-more</includeGroup>
          <includeGroup>net-snmp-disk-highlow</includeGroup>
@@ -184,6 +192,8 @@
    <systemDef name="Net-SNMP 5.5 with sysObjectID bug on x86_64">
       <sysoid>.0.1</sysoid>
       <collect>
+         <includeGroup>mib2-host-resources-system</includeGroup>
+         <includeGroup>mib2-host-resources-memory</includeGroup>
          <includeGroup>net-snmp-disk</includeGroup>
          <includeGroup>net-snmp-disk-more</includeGroup>
          <includeGroup>net-snmp-disk-highlow</includeGroup>

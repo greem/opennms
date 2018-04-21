@@ -71,6 +71,8 @@
       <include-collection dataCollectionGroup="PostgreSQL-JDBC"/>
       <include-collection dataCollectionGroup="Powerware"/>
       <include-collection dataCollectionGroup="REF_IETF"/>
+      <include-collection dataCollectionGroup="REF_MIB2-Host-Resources"/>
+      <include-collection dataCollectionGroup="REF_MIB2-Powerethernet"/>
       <include-collection dataCollectionGroup="REF_MIB2-UPS"/>
       <include-collection dataCollectionGroup="REF_Printers"/>
       <include-collection dataCollectionGroup="REF_Routers"/>

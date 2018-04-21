@@ -1,4 +1,4 @@
-<datacollection-group xmlns="http://xmlns.opennms.org/xsd/config/datacollection" name="MIB2-Host-Resources">
+<datacollection-group xmlns="http://xmlns.opennms.org/xsd/config/datacollection" name="REF_MIB2-Host-Resources">
    <resourceType name="hrStorageIndex" label="Storage (SNMP MIB-2 Host Resources)" resourceLabel="${hrStorageDescr}">
       <persistenceSelectorStrategy class="org.opennms.netmgt.collection.support.PersistAllSelectorStrategy"/>
       <storageStrategy class="org.opennms.netmgt.dao.support.SiblingColumnStorageStrategy">

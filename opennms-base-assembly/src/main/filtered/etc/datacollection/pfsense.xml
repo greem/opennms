@@ -101,6 +101,8 @@
    <systemDef name="pfSense">
       <sysoidMask>.1.3.6.1.4.1.12325.1.1.</sysoidMask>
       <collect>
+         <includeGroup>mib2-host-resources-system</includeGroup>
+         <includeGroup>mib2-host-resources-memory</includeGroup>
          <includeGroup>pfsense-system-scalars</includeGroup>
          <includeGroup>pfsense-statetable-scalars</includeGroup>
          <includeGroup>pfsense-srcnode-scalars</includeGroup>
