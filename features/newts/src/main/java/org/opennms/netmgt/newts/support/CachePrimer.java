@@ -74,10 +74,17 @@ public class CachePrimer implements InitializingBean, Runnable {
         thread.start();
         if (blockWhilePrimingMs >= 0) {
             try {
+                if (blockWhilePrimingMs == 0) {
+                    LOG.info("Blocking startup while waiting for cache to be fully primed.");
+                } else {
+                    LOG.info("Blocking startup for up-to {}ms while waiting for cache to be primed.", blockWhilePrimingMs);
+                }
                 thread.join(blockWhilePrimingMs);
                 if (thread.isAlive()) {
                     LOG.info("Cache is not yet done priming after waiting for {}ms. Current size is: {}." +
-                            " The operation will continue in the background.", blockWhilePrimingMs);
+                            " The operation will continue in the background.",
+                            blockWhilePrimingMs,
+                            resourceMetadataCache.getSize());
                 }
             } catch (InterruptedException e) {
                 LOG.info("Thread was interrupted while waiting for the cache to be primed.");
